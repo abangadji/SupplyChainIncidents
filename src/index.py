@@ -30,7 +30,7 @@ total_num_sheets = len(list_sheetnames)
 
 # Preprocessing tweets in each of the sheets and saving it in the new xls file "preprocessed.xls"
 
-style_blue = xlwt.easyxf('font: name Times New Roman, color-index blue, bold on', num_format_str='#, ##0.00')
+style_blue = xlwt.easyxf('font: name Times New Roman, color-index blue, bold on', num_format_str='#, ##0.00') # Style for headers in the excel sheet
 wb = xlwt.Workbook()
 
 avg_pol_sheet = []  # list containing average polarity of the sheets
