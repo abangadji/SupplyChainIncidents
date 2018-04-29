@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_cfdb051ca7b84d03bbb1720fc637d43d {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_cfdb051ca7b84d03bbb1720fc637d43d" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_cfdb051ca7b84d03bbb1720fc637d43d = L.map(
+                                  'map_cfdb051ca7b84d03bbb1720fc637d43d',
+                                  {center: [20,0],
+                                  zoom: 2,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_a444f3f865f84407b41f2e02f66f8fec = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+        
+    
+
+            var marker_ad4e8ce2ccd1451b9dda7e1555d5e4d6 = L.marker(
+                [37.09024,-95.712891],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_b924466b43ba473ab8ea202467285ea9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ad4e8ce2ccd1451b9dda7e1555d5e4d6.setIcon(icon_b924466b43ba473ab8ea202467285ea9);
+            
+    
+            var popup_0c0b7fe15d2a40a894fbc44c2a88746a = L.popup({maxWidth: '300'});
+
+            
+                var html_58dc87b12d464a3dabb76edd77aca576 = $('<div id="html_58dc87b12d464a3dabb76edd77aca576" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.15  Location: usa</div>')[0];
+                popup_0c0b7fe15d2a40a894fbc44c2a88746a.setContent(html_58dc87b12d464a3dabb76edd77aca576);
+            
+
+            marker_ad4e8ce2ccd1451b9dda7e1555d5e4d6.bindPopup(popup_0c0b7fe15d2a40a894fbc44c2a88746a);
+
+            
+        
+    
+
+            var marker_55fe99b0b7f342f49cc6646a9de059b8 = L.marker(
+                [22.396428,114.109497],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_41f9c3b57bcb452fb43332d2cbbbde01 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_55fe99b0b7f342f49cc6646a9de059b8.setIcon(icon_41f9c3b57bcb452fb43332d2cbbbde01);
+            
+    
+            var popup_48fca521c3ca42eb85f37e9427cb8cc0 = L.popup({maxWidth: '300'});
+
+            
+                var html_44b8d59376694b97987052d9108b9e50 = $('<div id="html_44b8d59376694b97987052d9108b9e50" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.3  Location: Hong Kong</div>')[0];
+                popup_48fca521c3ca42eb85f37e9427cb8cc0.setContent(html_44b8d59376694b97987052d9108b9e50);
+            
+
+            marker_55fe99b0b7f342f49cc6646a9de059b8.bindPopup(popup_48fca521c3ca42eb85f37e9427cb8cc0);
+
+            
+        
+    
+
+            var marker_e23f948136594b38b9311029caf97eec = L.marker(
+                [37.387474,-122.0575434],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_5c939974e43f481493c480f6a0a22965 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e23f948136594b38b9311029caf97eec.setIcon(icon_5c939974e43f481493c480f6a0a22965);
+            
+    
+            var popup_04572d5e47cc4ff787daf183543ebc1b = L.popup({maxWidth: '300'});
+
+            
+                var html_989341c1a69249e1852155dbb9c03bfd = $('<div id="html_989341c1a69249e1852155dbb9c03bfd" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.3  Location: Silicon Valley, California</div>')[0];
+                popup_04572d5e47cc4ff787daf183543ebc1b.setContent(html_989341c1a69249e1852155dbb9c03bfd);
+            
+
+            marker_e23f948136594b38b9311029caf97eec.bindPopup(popup_04572d5e47cc4ff787daf183543ebc1b);
+
+            
+        
+    
+
+            var marker_9cfc951c6f2742f5ac73437d64a1d49a = L.marker(
+                [-25.274398,133.775136],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_5162da589d934e8f9e30d47d068493da = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9cfc951c6f2742f5ac73437d64a1d49a.setIcon(icon_5162da589d934e8f9e30d47d068493da);
+            
+    
+            var popup_dbbad6c9c88b4a2faf15f7c558c0de92 = L.popup({maxWidth: '300'});
+
+            
+                var html_5dbe516c049441719838569becd4ef10 = $('<div id="html_5dbe516c049441719838569becd4ef10" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.3  Location: Australia</div>')[0];
+                popup_dbbad6c9c88b4a2faf15f7c558c0de92.setContent(html_5dbe516c049441719838569becd4ef10);
+            
+
+            marker_9cfc951c6f2742f5ac73437d64a1d49a.bindPopup(popup_dbbad6c9c88b4a2faf15f7c558c0de92);
+
+            
+        
+    
+
+            var marker_2ef8ae33c4fc4aa3994a85c8eabd44a4 = L.marker(
+                [31.9730015,34.7925013],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_0074e2f10e4848d5a27a8eb0b2a86aea = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2ef8ae33c4fc4aa3994a85c8eabd44a4.setIcon(icon_0074e2f10e4848d5a27a8eb0b2a86aea);
+            
+    
+            var popup_b02b6a011f714a20b80569686969be57 = L.popup({maxWidth: '300'});
+
+            
+                var html_46757eaf75fa412686c75fe428f35e5e = $('<div id="html_46757eaf75fa412686c75fe428f35e5e" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.3  Location: Rishon Lezion, Israel</div>')[0];
+                popup_b02b6a011f714a20b80569686969be57.setContent(html_46757eaf75fa412686c75fe428f35e5e);
+            
+
+            marker_2ef8ae33c4fc4aa3994a85c8eabd44a4.bindPopup(popup_b02b6a011f714a20b80569686969be57);
+
+            
+        
+    
+
+            var marker_837ccdb56c7e41cf9b9b65e88ad5085c = L.marker(
+                [-12.0463731,-77.042754],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_95f5b6237cde43bb84ffe45f95d428f7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_837ccdb56c7e41cf9b9b65e88ad5085c.setIcon(icon_95f5b6237cde43bb84ffe45f95d428f7);
+            
+    
+            var popup_62ed1f8fa93246e2b5fb102b75f148b4 = L.popup({maxWidth: '300'});
+
+            
+                var html_b5b81d41ba814cec9570d2a7fad45d34 = $('<div id="html_b5b81d41ba814cec9570d2a7fad45d34" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.3  Location: Lima, Peru</div>')[0];
+                popup_62ed1f8fa93246e2b5fb102b75f148b4.setContent(html_b5b81d41ba814cec9570d2a7fad45d34);
+            
+
+            marker_837ccdb56c7e41cf9b9b65e88ad5085c.bindPopup(popup_62ed1f8fa93246e2b5fb102b75f148b4);
+
+            
+        
+    
+
+            var marker_d9606cba05e8457eaa878c6c9267339e = L.marker(
+                [36.2067586,-95.986942],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_1a39c7c9264041e79dcdc26448854009 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d9606cba05e8457eaa878c6c9267339e.setIcon(icon_1a39c7c9264041e79dcdc26448854009);
+            
+    
+            var popup_20a522e698aa4c59836fb3b28f878878 = L.popup({maxWidth: '300'});
+
+            
+                var html_9b908df77fd449c981a102752ae5d814 = $('<div id="html_9b908df77fd449c981a102752ae5d814" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.3  Location: World</div>')[0];
+                popup_20a522e698aa4c59836fb3b28f878878.setContent(html_9b908df77fd449c981a102752ae5d814);
+            
+
+            marker_d9606cba05e8457eaa878c6c9267339e.bindPopup(popup_20a522e698aa4c59836fb3b28f878878);
+
+            
+        
+    
+
+            var marker_0e4390eb456a4ea6a77d2662a91b7a42 = L.marker(
+                [-43.5320544,172.6362254],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_8d05706300c847bbb375e2ce37cadf97 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0e4390eb456a4ea6a77d2662a91b7a42.setIcon(icon_8d05706300c847bbb375e2ce37cadf97);
+            
+    
+            var popup_a7b40d0af9d040578c6943581379d3d6 = L.popup({maxWidth: '300'});
+
+            
+                var html_61b101711362455db050a74dc9acf6f6 = $('<div id="html_61b101711362455db050a74dc9acf6f6" style="width: 100.0%; height: 100.0%;">Sentiment :  0.067  Location :Ōtautahi, Aotearoa 🌎</div>')[0];
+                popup_a7b40d0af9d040578c6943581379d3d6.setContent(html_61b101711362455db050a74dc9acf6f6);
+            
+
+            marker_0e4390eb456a4ea6a77d2662a91b7a42.bindPopup(popup_a7b40d0af9d040578c6943581379d3d6);
+
+            
+        
+    
+
+            var marker_0637326a39f444ddb26410fdc732a34f = L.marker(
+                [51.5073509,-0.1277583],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_8172d4e3b3ce46e7abef633c74054772 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0637326a39f444ddb26410fdc732a34f.setIcon(icon_8172d4e3b3ce46e7abef633c74054772);
+            
+    
+            var popup_fe7ec41cd26842db96881451d47149c5 = L.popup({maxWidth: '300'});
+
+            
+                var html_558c4bb4059946ecb0038e282b8e85f6 = $('<div id="html_558c4bb4059946ecb0038e282b8e85f6" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.082  Location: London/New York/Sydney</div>')[0];
+                popup_fe7ec41cd26842db96881451d47149c5.setContent(html_558c4bb4059946ecb0038e282b8e85f6);
+            
+
+            marker_0637326a39f444ddb26410fdc732a34f.bindPopup(popup_fe7ec41cd26842db96881451d47149c5);
+
+            
+        
+    
+
+            var marker_9ca5d14a72b949a3b2cd00c37d3cd31b = L.marker(
+                [51.5073509,-0.1277583],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_fb19ab27d52a4bb8b13f8a5b36c2096d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9ca5d14a72b949a3b2cd00c37d3cd31b.setIcon(icon_fb19ab27d52a4bb8b13f8a5b36c2096d);
+            
+    
+            var popup_6402d7cef1e9475cb25cef33fead1b2c = L.popup({maxWidth: '300'});
+
+            
+                var html_0a6218f923dd4db1adff96131027e399 = $('<div id="html_0a6218f923dd4db1adff96131027e399" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.125  Location: London, UK</div>')[0];
+                popup_6402d7cef1e9475cb25cef33fead1b2c.setContent(html_0a6218f923dd4db1adff96131027e399);
+            
+
+            marker_9ca5d14a72b949a3b2cd00c37d3cd31b.bindPopup(popup_6402d7cef1e9475cb25cef33fead1b2c);
+
+            
+        
+    
+
+            var marker_01634f7979ae49ac9a9f9b856f7c0098 = L.marker(
+                [-43.5320544,172.6362254],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_529b268b7a2349329ff05cfd29f95e14 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_01634f7979ae49ac9a9f9b856f7c0098.setIcon(icon_529b268b7a2349329ff05cfd29f95e14);
+            
+    
+            var popup_327caacb115e4113912e5915b53e6d91 = L.popup({maxWidth: '300'});
+
+            
+                var html_aab5d25b00354330a207f18732a80333 = $('<div id="html_aab5d25b00354330a207f18732a80333" style="width: 100.0%; height: 100.0%;">Sentiment :  0.067  Location :Ōtautahi, Aotearoa 🌎</div>')[0];
+                popup_327caacb115e4113912e5915b53e6d91.setContent(html_aab5d25b00354330a207f18732a80333);
+            
+
+            marker_01634f7979ae49ac9a9f9b856f7c0098.bindPopup(popup_327caacb115e4113912e5915b53e6d91);
+
+            
+        
+    
+
+            var marker_080bb06115ca465e96bd9ca5c551535f = L.marker(
+                [-37.5621587,143.8502556],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_8fdc48a6acbf43048756d90886247b70 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_080bb06115ca465e96bd9ca5c551535f.setIcon(icon_8fdc48a6acbf43048756d90886247b70);
+            
+    
+            var popup_fc5d7080543745e1b2eaadc520d132a4 = L.popup({maxWidth: '300'});
+
+            
+                var html_afa68d40a813424e9cc6b1b08cacc098 = $('<div id="html_afa68d40a813424e9cc6b1b08cacc098" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.15  Location: Ballarat, Victoria AUSTRALIA</div>')[0];
+                popup_fc5d7080543745e1b2eaadc520d132a4.setContent(html_afa68d40a813424e9cc6b1b08cacc098);
+            
+
+            marker_080bb06115ca465e96bd9ca5c551535f.bindPopup(popup_fc5d7080543745e1b2eaadc520d132a4);
+
+            
+        
+    
+
+            var marker_11d2648e9cf440438411e4308555df60 = L.marker(
+                [15.3228767,38.9250517],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_87113868fb8a4811b337de850c9d7591 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_11d2648e9cf440438411e4308555df60.setIcon(icon_87113868fb8a4811b337de850c9d7591);
+            
+    
+            var popup_fed0343f992d4d0884af41ea5f914f7e = L.popup({maxWidth: '300'});
+
+            
+                var html_ed3f33b989804f7a8b11335d28c9d726 = $('<div id="html_ed3f33b989804f7a8b11335d28c9d726" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.138  Location: Asmara Eritrea </div>')[0];
+                popup_fed0343f992d4d0884af41ea5f914f7e.setContent(html_ed3f33b989804f7a8b11335d28c9d726);
+            
+
+            marker_11d2648e9cf440438411e4308555df60.bindPopup(popup_fed0343f992d4d0884af41ea5f914f7e);
+
+            
+        
+    
+
+            var marker_c3ff021355524b91950f0b688e9bf5cd = L.marker(
+                [44.5588028,-72.57784149999999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_dae8bb5bc8fb49829e2909ff7a7c2882 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c3ff021355524b91950f0b688e9bf5cd.setIcon(icon_dae8bb5bc8fb49829e2909ff7a7c2882);
+            
+    
+            var popup_85cdbcf24b4c4b0d9ca35cd6b5c6534d = L.popup({maxWidth: '300'});
+
+            
+                var html_52009f22f0c241918f0f731290916ed4 = $('<div id="html_52009f22f0c241918f0f731290916ed4" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.4  Location: Vermont USA</div>')[0];
+                popup_85cdbcf24b4c4b0d9ca35cd6b5c6534d.setContent(html_52009f22f0c241918f0f731290916ed4);
+            
+
+            marker_c3ff021355524b91950f0b688e9bf5cd.bindPopup(popup_85cdbcf24b4c4b0d9ca35cd6b5c6534d);
+
+            
+        
+    
+
+            var marker_28670a5fc54344a5b6696bdda26c35fd = L.marker(
+                [41.2033216,-77.1945247],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_65c8c064da7c406891e5bfdac11e8f28 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_28670a5fc54344a5b6696bdda26c35fd.setIcon(icon_65c8c064da7c406891e5bfdac11e8f28);
+            
+    
+            var popup_8441c99d36de4e8e9f4c2ce1d6342f8b = L.popup({maxWidth: '300'});
+
+            
+                var html_07228167aa2f4aa6afd444130ddce1ba = $('<div id="html_07228167aa2f4aa6afd444130ddce1ba" style="width: 100.0%; height: 100.0%;">Sentiment :  0.25  Location :Pennsylvania, USA</div>')[0];
+                popup_8441c99d36de4e8e9f4c2ce1d6342f8b.setContent(html_07228167aa2f4aa6afd444130ddce1ba);
+            
+
+            marker_28670a5fc54344a5b6696bdda26c35fd.bindPopup(popup_8441c99d36de4e8e9f4c2ce1d6342f8b);
+
+            
+        
+    
+
+            var marker_74217724217a4065bde8cd8afe2095a7 = L.marker(
+                [35.7595731,-79.01929969999999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_4bcada92e84f4a07abd60e327797ea94 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_74217724217a4065bde8cd8afe2095a7.setIcon(icon_4bcada92e84f4a07abd60e327797ea94);
+            
+    
+            var popup_42836e920d5c41698b2687df15a6f13a = L.popup({maxWidth: '300'});
+
+            
+                var html_c1699ee492564ee8b2616314577fb223 = $('<div id="html_c1699ee492564ee8b2616314577fb223" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.3  Location: North Carolina</div>')[0];
+                popup_42836e920d5c41698b2687df15a6f13a.setContent(html_c1699ee492564ee8b2616314577fb223);
+            
+
+            marker_74217724217a4065bde8cd8afe2095a7.bindPopup(popup_42836e920d5c41698b2687df15a6f13a);
+
+            
+        
+    
+
+            var marker_ed38ad2a075f4a10b3c9555da0df4d57 = L.marker(
+                [35.7595731,-79.01929969999999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_e9dc5e717fed48638fb0ec5eff3a864a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ed38ad2a075f4a10b3c9555da0df4d57.setIcon(icon_e9dc5e717fed48638fb0ec5eff3a864a);
+            
+    
+            var popup_d7af290be2124d8a8068fac814e5ac20 = L.popup({maxWidth: '300'});
+
+            
+                var html_b2a367b713c348e0bc8d8c1f782e0301 = $('<div id="html_b2a367b713c348e0bc8d8c1f782e0301" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.083  Location: North Carolina</div>')[0];
+                popup_d7af290be2124d8a8068fac814e5ac20.setContent(html_b2a367b713c348e0bc8d8c1f782e0301);
+            
+
+            marker_ed38ad2a075f4a10b3c9555da0df4d57.bindPopup(popup_d7af290be2124d8a8068fac814e5ac20);
+
+            
+        
+    
+
+            var marker_b1321f54add54557be860a83283d2be4 = L.marker(
+                [38.9071923,-77.0368707],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_e70be12dc4c74d0dbff7d81a490b0f14 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b1321f54add54557be860a83283d2be4.setIcon(icon_e70be12dc4c74d0dbff7d81a490b0f14);
+            
+    
+            var popup_699a6cc121574affbf6a12f546984428 = L.popup({maxWidth: '300'});
+
+            
+                var html_1a44c60e3f694947be83e794f62d5741 = $('<div id="html_1a44c60e3f694947be83e794f62d5741" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.25  Location: Washington, DC</div>')[0];
+                popup_699a6cc121574affbf6a12f546984428.setContent(html_1a44c60e3f694947be83e794f62d5741);
+            
+
+            marker_b1321f54add54557be860a83283d2be4.bindPopup(popup_699a6cc121574affbf6a12f546984428);
+
+            
+        
+    
+
+            var marker_0ce1cf611d8a4095ae60e6072777447e = L.marker(
+                [31.2303904,121.4737021],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_10c6a443d11a4bf9b5d191caaa31b98b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0ce1cf611d8a4095ae60e6072777447e.setIcon(icon_10c6a443d11a4bf9b5d191caaa31b98b);
+            
+    
+            var popup_89e14c7dcf4844bea96c28a29f1cf1e6 = L.popup({maxWidth: '300'});
+
+            
+                var html_31829c02d811447dbcaa957a4ed0c2f8 = $('<div id="html_31829c02d811447dbcaa957a4ed0c2f8" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.2  Location: Shanghai</div>')[0];
+                popup_89e14c7dcf4844bea96c28a29f1cf1e6.setContent(html_31829c02d811447dbcaa957a4ed0c2f8);
+            
+
+            marker_0ce1cf611d8a4095ae60e6072777447e.bindPopup(popup_89e14c7dcf4844bea96c28a29f1cf1e6);
+
+            
+        
+    
+
+            var marker_a0eef92e30d44223abd73adde5cad761 = L.marker(
+                [13.7563309,100.5017651],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_e6151e7413e44aa490823c80116e59b9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a0eef92e30d44223abd73adde5cad761.setIcon(icon_e6151e7413e44aa490823c80116e59b9);
+            
+    
+            var popup_05e4481d39ea4e838a1e1039f03b94eb = L.popup({maxWidth: '300'});
+
+            
+                var html_4cb4de7dde6a432aabff3f25d4053d4f = $('<div id="html_4cb4de7dde6a432aabff3f25d4053d4f" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.3  Location: Bangkok</div>')[0];
+                popup_05e4481d39ea4e838a1e1039f03b94eb.setContent(html_4cb4de7dde6a432aabff3f25d4053d4f);
+            
+
+            marker_a0eef92e30d44223abd73adde5cad761.bindPopup(popup_05e4481d39ea4e838a1e1039f03b94eb);
+
+            
+        
+    
+
+            var marker_6d8a06a1bc4c4107b91cf8309ffca73f = L.marker(
+                [46.729553,-94.6858998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_1c2728367f21493d9e5418275014db11 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6d8a06a1bc4c4107b91cf8309ffca73f.setIcon(icon_1c2728367f21493d9e5418275014db11);
+            
+    
+            var popup_02559b10e6a14818b1420b7e30846886 = L.popup({maxWidth: '300'});
+
+            
+                var html_ee201fe5c1f749aa91ea7cbd94c4b699 = $('<div id="html_ee201fe5c1f749aa91ea7cbd94c4b699" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.1  Location: Minnesota</div>')[0];
+                popup_02559b10e6a14818b1420b7e30846886.setContent(html_ee201fe5c1f749aa91ea7cbd94c4b699);
+            
+
+            marker_6d8a06a1bc4c4107b91cf8309ffca73f.bindPopup(popup_02559b10e6a14818b1420b7e30846886);
+
+            
+        
+    
+
+            var marker_6cd62a99c296443ea29f45682e000f36 = L.marker(
+                [43.0006253,-75.3137775],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_6159ae0213a34e1cbb181fe5467f87cd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6cd62a99c296443ea29f45682e000f36.setIcon(icon_6159ae0213a34e1cbb181fe5467f87cd);
+            
+    
+            var popup_5c5e58fb5cf54d60b98b054ee0dea4f7 = L.popup({maxWidth: '300'});
+
+            
+                var html_1344e80c58614503a1d63b7e28ed1503 = $('<div id="html_1344e80c58614503a1d63b7e28ed1503" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.3  Location: Paris, New York, Warsaw, Hong Kong, London, Toronto, Mauritius, Tunis</div>')[0];
+                popup_5c5e58fb5cf54d60b98b054ee0dea4f7.setContent(html_1344e80c58614503a1d63b7e28ed1503);
+            
+
+            marker_6cd62a99c296443ea29f45682e000f36.bindPopup(popup_5c5e58fb5cf54d60b98b054ee0dea4f7);
+
+            
+        
+    
+
+            var marker_ac4b7626bc1c4044ba734211b346b10b = L.marker(
+                [44.0383744,-79.1999949],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_4321497d71584b3988505e74e4ff207c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ac4b7626bc1c4044ba734211b346b10b.setIcon(icon_4321497d71584b3988505e74e4ff207c);
+            
+    
+            var popup_7e5cbb14c1fd40598ce54122a99db43b = L.popup({maxWidth: '300'});
+
+            
+                var html_06d48952e59a4e23ade70e4a526acdfb = $('<div id="html_06d48952e59a4e23ade70e4a526acdfb" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.15  Location: Toronto area</div>')[0];
+                popup_7e5cbb14c1fd40598ce54122a99db43b.setContent(html_06d48952e59a4e23ade70e4a526acdfb);
+            
+
+            marker_ac4b7626bc1c4044ba734211b346b10b.bindPopup(popup_7e5cbb14c1fd40598ce54122a99db43b);
+
+            
+        
+    
+
+            var marker_19cf64462adf4ce595868d293657a3ba = L.marker(
+                [-33.864859,151.206173],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_66f619978a9c4f048ebf56ddedf39286 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_19cf64462adf4ce595868d293657a3ba.setIcon(icon_66f619978a9c4f048ebf56ddedf39286);
+            
+    
+            var popup_2d0c56456218428ba02b73c05874cb7a = L.popup({maxWidth: '300'});
+
+            
+                var html_3e8aa8e8539847dc94c8f583df88f462 = $('<div id="html_3e8aa8e8539847dc94c8f583df88f462" style="width: 100.0%; height: 100.0%;">Sentiment :  0.0  Location : worldwide</div>')[0];
+                popup_2d0c56456218428ba02b73c05874cb7a.setContent(html_3e8aa8e8539847dc94c8f583df88f462);
+            
+
+            marker_19cf64462adf4ce595868d293657a3ba.bindPopup(popup_2d0c56456218428ba02b73c05874cb7a);
+
+            
+        
+    
+
+            var marker_48e2a25b000049c492f33f260084673d = L.marker(
+                [-8.660905900000001,115.1396321],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_c73975fd08134526b4043613f5a0139b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_48e2a25b000049c492f33f260084673d.setIcon(icon_c73975fd08134526b4043613f5a0139b);
+            
+    
+            var popup_158204b1b7174c61a369e287572780f3 = L.popup({maxWidth: '300'});
+
+            
+                var html_0ae54237164d497e8c8a1c98506cbe39 = $('<div id="html_0ae54237164d497e8c8a1c98506cbe39" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.08  Location: Balifornia </div>')[0];
+                popup_158204b1b7174c61a369e287572780f3.setContent(html_0ae54237164d497e8c8a1c98506cbe39);
+            
+
+            marker_48e2a25b000049c492f33f260084673d.bindPopup(popup_158204b1b7174c61a369e287572780f3);
+
+            
+        
+    
+
+            var marker_021034c0ede5485c91d4f176525cdd3b = L.marker(
+                [35.937496,14.375416],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_5048729335874587a746c758d395f63a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_021034c0ede5485c91d4f176525cdd3b.setIcon(icon_5048729335874587a746c758d395f63a);
+            
+    
+            var popup_1beb265a882a41f3a87ec84e2cb62e28 = L.popup({maxWidth: '300'});
+
+            
+                var html_2de5bb96b97b4753899d25962e8bbe48 = $('<div id="html_2de5bb96b97b4753899d25962e8bbe48" style="width: 100.0%; height: 100.0%;">Sentiment :  0.367  Location :Malta</div>')[0];
+                popup_1beb265a882a41f3a87ec84e2cb62e28.setContent(html_2de5bb96b97b4753899d25962e8bbe48);
+            
+
+            marker_021034c0ede5485c91d4f176525cdd3b.bindPopup(popup_1beb265a882a41f3a87ec84e2cb62e28);
+
+            
+        
+    
+
+            var marker_627b93c1a2b4413a881348031763234e = L.marker(
+                [-33.864859,151.206173],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_edae8f8bb8da4d9e8d14ff28d7243107 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_627b93c1a2b4413a881348031763234e.setIcon(icon_edae8f8bb8da4d9e8d14ff28d7243107);
+            
+    
+            var popup_ab5e4da28d1d448ea544b802e4f932a9 = L.popup({maxWidth: '300'});
+
+            
+                var html_38150d2f8f9b495ca4d13849c64850bd = $('<div id="html_38150d2f8f9b495ca4d13849c64850bd" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.8  Location: Worldwide</div>')[0];
+                popup_ab5e4da28d1d448ea544b802e4f932a9.setContent(html_38150d2f8f9b495ca4d13849c64850bd);
+            
+
+            marker_627b93c1a2b4413a881348031763234e.bindPopup(popup_ab5e4da28d1d448ea544b802e4f932a9);
+
+            
+        
+    
+
+            var marker_67edb3e490c64dfd86aca978018b15a6 = L.marker(
+                [51.0188,4.78263],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_a8c241e723114336ab9f3acc2d5bfe3e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_67edb3e490c64dfd86aca978018b15a6.setIcon(icon_a8c241e723114336ab9f3acc2d5bfe3e);
+            
+    
+            var popup_e2f1511c2b5c4b64b5f070b6df6a3deb = L.popup({maxWidth: '300'});
+
+            
+                var html_e999dd4e2d4a4c2882acf1d54f53df5e = $('<div id="html_e999dd4e2d4a4c2882acf1d54f53df5e" style="width: 100.0%; height: 100.0%;">Sentiment :  0.25  Location :Begijnendijk, België</div>')[0];
+                popup_e2f1511c2b5c4b64b5f070b6df6a3deb.setContent(html_e999dd4e2d4a4c2882acf1d54f53df5e);
+            
+
+            marker_67edb3e490c64dfd86aca978018b15a6.bindPopup(popup_e2f1511c2b5c4b64b5f070b6df6a3deb);
+
+            
+        
+    
+
+            var marker_0fc70af4652e41f1a970613d7b6ca20b = L.marker(
+                [-33.8688197,151.2092955],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_e272b64a8ab64b5abbf571e228ae3a52 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0fc70af4652e41f1a970613d7b6ca20b.setIcon(icon_e272b64a8ab64b5abbf571e228ae3a52);
+            
+    
+            var popup_3c96e2896df74c92a5d0d657b89e5000 = L.popup({maxWidth: '300'});
+
+            
+                var html_cb4a57821cf741fa97b35b61f416a8dd = $('<div id="html_cb4a57821cf741fa97b35b61f416a8dd" style="width: 100.0%; height: 100.0%;">Sentiment :  0.2  Location :Sydney</div>')[0];
+                popup_3c96e2896df74c92a5d0d657b89e5000.setContent(html_cb4a57821cf741fa97b35b61f416a8dd);
+            
+
+            marker_0fc70af4652e41f1a970613d7b6ca20b.bindPopup(popup_3c96e2896df74c92a5d0d657b89e5000);
+
+            
+        
+    
+
+            var marker_c2fcfb9023534595b7982e2d616c1d4a = L.marker(
+                [37.09024,-95.712891],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_cfdb051ca7b84d03bbb1720fc637d43d);
+            
+    
+
+                var icon_9e080b586caf4228917bb0ded60d73f6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c2fcfb9023534595b7982e2d616c1d4a.setIcon(icon_9e080b586caf4228917bb0ded60d73f6);
+            
+    
+            var popup_db707941aa51456a91834f7a866d7317 = L.popup({maxWidth: '300'});
+
+            
+                var html_f22cf88c36fc4038a2fccd1bbba772f0 = $('<div id="html_f22cf88c36fc4038a2fccd1bbba772f0" style="width: 100.0%; height: 100.0%;">Sentiment :  0.168  Location :Californication, USA </div>')[0];
+                popup_db707941aa51456a91834f7a866d7317.setContent(html_f22cf88c36fc4038a2fccd1bbba772f0);
+            
+
+            marker_c2fcfb9023534595b7982e2d616c1d4a.bindPopup(popup_db707941aa51456a91834f7a866d7317);
+
+            
+        
+</script>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_2978e49bc0954cc29a3a14b16263046e {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2978e49bc0954cc29a3a14b16263046e" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_2978e49bc0954cc29a3a14b16263046e = L.map(
+                                  'map_2978e49bc0954cc29a3a14b16263046e',
+                                  {center: [20,0],
+                                  zoom: 2,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_b674a371396348b0837865b79db58109 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_2978e49bc0954cc29a3a14b16263046e);
+        
+    
+
+            var marker_d5b46380af5244fabd001f80729288e0 = L.marker(
+                [55.378051,-3.435973],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2978e49bc0954cc29a3a14b16263046e);
+            
+    
+
+                var icon_35139918d0204cab8a99ea16875832ac = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d5b46380af5244fabd001f80729288e0.setIcon(icon_35139918d0204cab8a99ea16875832ac);
+            
+    
+            var popup_326ce65c6ba3417aba3c002edd4e2c32 = L.popup({maxWidth: '300'});
+
+            
+                var html_f3d237a507b54298add6b9f6606ac31f = $('<div id="html_f3d237a507b54298add6b9f6606ac31f" style="width: 100.0%; height: 100.0%;">Sentiment :  0.2  Location :United Kingdom</div>')[0];
+                popup_326ce65c6ba3417aba3c002edd4e2c32.setContent(html_f3d237a507b54298add6b9f6606ac31f);
+            
+
+            marker_d5b46380af5244fabd001f80729288e0.bindPopup(popup_326ce65c6ba3417aba3c002edd4e2c32);
+
+            
+        
+    
+
+            var marker_4bb738b46b6d4ab28aaffb132df86430 = L.marker(
+                [51.5073509,-0.1277583],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2978e49bc0954cc29a3a14b16263046e);
+            
+    
+
+                var icon_b9bd5c80394746da82c3dff28bae5cfa = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4bb738b46b6d4ab28aaffb132df86430.setIcon(icon_b9bd5c80394746da82c3dff28bae5cfa);
+            
+    
+            var popup_432aface8a664b98a53070e3d7a4a88a = L.popup({maxWidth: '300'});
+
+            
+                var html_ecee8658781b45a79b70972896ff7a6c = $('<div id="html_ecee8658781b45a79b70972896ff7a6c" style="width: 100.0%; height: 100.0%;">Sentiment :  0.0  Location : London, United Kingdom</div>')[0];
+                popup_432aface8a664b98a53070e3d7a4a88a.setContent(html_ecee8658781b45a79b70972896ff7a6c);
+            
+
+            marker_4bb738b46b6d4ab28aaffb132df86430.bindPopup(popup_432aface8a664b98a53070e3d7a4a88a);
+
+            
+        
+    
+
+            var marker_a1c97f0ad26e4b3f853e43115064a1dd = L.marker(
+                [53.4083714,-2.9915726],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2978e49bc0954cc29a3a14b16263046e);
+            
+    
+
+                var icon_c406eb7cab8c40c0b070fb26ac60943e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a1c97f0ad26e4b3f853e43115064a1dd.setIcon(icon_c406eb7cab8c40c0b070fb26ac60943e);
+            
+    
+            var popup_3a1e7670ce564ec7b6313de974de5532 = L.popup({maxWidth: '300'});
+
+            
+                var html_47d353bb3ae1422ca2f8fe8103bc8421 = $('<div id="html_47d353bb3ae1422ca2f8fe8103bc8421" style="width: 100.0%; height: 100.0%;">Sentiment :  0.0  Location : Liverpool</div>')[0];
+                popup_3a1e7670ce564ec7b6313de974de5532.setContent(html_47d353bb3ae1422ca2f8fe8103bc8421);
+            
+
+            marker_a1c97f0ad26e4b3f853e43115064a1dd.bindPopup(popup_3a1e7670ce564ec7b6313de974de5532);
+
+            
+        
+    
+
+            var marker_d8f2e356d84441dba54acee5dcc8df17 = L.marker(
+                [53.7632254,-2.7044052],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2978e49bc0954cc29a3a14b16263046e);
+            
+    
+
+                var icon_5fd3e87d4c884462bd922955de696aeb = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d8f2e356d84441dba54acee5dcc8df17.setIcon(icon_5fd3e87d4c884462bd922955de696aeb);
+            
+    
+            var popup_419f7f0833334a918d801c74558d94c4 = L.popup({maxWidth: '300'});
+
+            
+                var html_1930c20d9891431e82a5c372a57bc51d = $('<div id="html_1930c20d9891431e82a5c372a57bc51d" style="width: 100.0%; height: 100.0%;">Sentiment :  0.05  Location :Lancashire</div>')[0];
+                popup_419f7f0833334a918d801c74558d94c4.setContent(html_1930c20d9891431e82a5c372a57bc51d);
+            
+
+            marker_d8f2e356d84441dba54acee5dcc8df17.bindPopup(popup_419f7f0833334a918d801c74558d94c4);
+
+            
+        
+    
+
+            var marker_50aff466918b4e408e84e6326da682c8 = L.marker(
+                [52.3702157,4.895167900000001],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2978e49bc0954cc29a3a14b16263046e);
+            
+    
+
+                var icon_e6b053938c18470d87927c9b90c54211 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_50aff466918b4e408e84e6326da682c8.setIcon(icon_e6b053938c18470d87927c9b90c54211);
+            
+    
+            var popup_4059702d1e2947a892ef7cfe8212acbe = L.popup({maxWidth: '300'});
+
+            
+                var html_9a11e516bd5b4926b2fa2d763ee873e4 = $('<div id="html_9a11e516bd5b4926b2fa2d763ee873e4" style="width: 100.0%; height: 100.0%;">Sentiment :  0.2  Location :Amsterdam, The Netherlands</div>')[0];
+                popup_4059702d1e2947a892ef7cfe8212acbe.setContent(html_9a11e516bd5b4926b2fa2d763ee873e4);
+            
+
+            marker_50aff466918b4e408e84e6326da682c8.bindPopup(popup_4059702d1e2947a892ef7cfe8212acbe);
+
+            
+        
+    
+
+            var marker_de9395689e0b4b9f9fd87a5b9847aa11 = L.marker(
+                [51.5906113,-0.1109709],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2978e49bc0954cc29a3a14b16263046e);
+            
+    
+
+                var icon_ea426deaac2749e6aed51c2c495377fc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_de9395689e0b4b9f9fd87a5b9847aa11.setIcon(icon_ea426deaac2749e6aed51c2c495377fc);
+            
+    
+            var popup_fcfca995f6004f99af03b9ce7f300d56 = L.popup({maxWidth: '300'});
+
+            
+                var html_1fb9685461fc48e292733800ef048cf8 = $('<div id="html_1fb9685461fc48e292733800ef048cf8" style="width: 100.0%; height: 100.0%;">Sentiment :  0.05  Location :Haringey</div>')[0];
+                popup_fcfca995f6004f99af03b9ce7f300d56.setContent(html_1fb9685461fc48e292733800ef048cf8);
+            
+
+            marker_de9395689e0b4b9f9fd87a5b9847aa11.bindPopup(popup_fcfca995f6004f99af03b9ce7f300d56);
+
+            
+        
+    
+
+            var marker_7cf883da083e43f2ae49426b32d4d827 = L.marker(
+                [55.378051,-3.435973],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2978e49bc0954cc29a3a14b16263046e);
+            
+    
+
+                var icon_678116a5ebe0460e802f2b2e39f257e5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7cf883da083e43f2ae49426b32d4d827.setIcon(icon_678116a5ebe0460e802f2b2e39f257e5);
+            
+    
+            var popup_2b15c326535b4fc0a5e8020f8cda039c = L.popup({maxWidth: '300'});
+
+            
+                var html_e59be5beb87b48d7877aed8aaeaec515 = $('<div id="html_e59be5beb87b48d7877aed8aaeaec515" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.25  Location: UK</div>')[0];
+                popup_2b15c326535b4fc0a5e8020f8cda039c.setContent(html_e59be5beb87b48d7877aed8aaeaec515);
+            
+
+            marker_7cf883da083e43f2ae49426b32d4d827.bindPopup(popup_2b15c326535b4fc0a5e8020f8cda039c);
+
+            
+        
+    
+
+            var marker_7c6024aae8b24c6f8dae386a819bb007 = L.marker(
+                [51.5906113,-0.1109709],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2978e49bc0954cc29a3a14b16263046e);
+            
+    
+
+                var icon_ce19e9dc031f408c954272a1131c420b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7c6024aae8b24c6f8dae386a819bb007.setIcon(icon_ce19e9dc031f408c954272a1131c420b);
+            
+    
+            var popup_ff0b8bda73ee473db844f88ae8bc1615 = L.popup({maxWidth: '300'});
+
+            
+                var html_b551552af53544088a269e239bb1eb84 = $('<div id="html_b551552af53544088a269e239bb1eb84" style="width: 100.0%; height: 100.0%;">Sentiment :  0.0  Location : Haringey</div>')[0];
+                popup_ff0b8bda73ee473db844f88ae8bc1615.setContent(html_b551552af53544088a269e239bb1eb84);
+            
+
+            marker_7c6024aae8b24c6f8dae386a819bb007.bindPopup(popup_ff0b8bda73ee473db844f88ae8bc1615);
+
+            
+        
+    
+
+            var marker_00f9d5b5aada4b1a830062f44bf48ae0 = L.marker(
+                [51.4974948,-0.1356583],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2978e49bc0954cc29a3a14b16263046e);
+            
+    
+
+                var icon_5f2778c2431546739aa067eaedd88cfa = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_00f9d5b5aada4b1a830062f44bf48ae0.setIcon(icon_5f2778c2431546739aa067eaedd88cfa);
+            
+    
+            var popup_06de2e495d764623af5098d81fa10a6b = L.popup({maxWidth: '300'});
+
+            
+                var html_4b393d727a1d472f86e9450bb795127c = $('<div id="html_4b393d727a1d472f86e9450bb795127c" style="width: 100.0%; height: 100.0%;">Sentiment :  0.0  Location : Westminster, UK</div>')[0];
+                popup_06de2e495d764623af5098d81fa10a6b.setContent(html_4b393d727a1d472f86e9450bb795127c);
+            
+
+            marker_00f9d5b5aada4b1a830062f44bf48ae0.bindPopup(popup_06de2e495d764623af5098d81fa10a6b);
+
+            
+        
+    
+
+            var marker_d8a65a0698a54c72b7b5a350f0e62fb5 = L.marker(
+                [42.3896522,-90.2798622],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2978e49bc0954cc29a3a14b16263046e);
+            
+    
+
+                var icon_0ec0bb142a5d4098a8361f3988be317e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d8a65a0698a54c72b7b5a350f0e62fb5.setIcon(icon_0ec0bb142a5d4098a8361f3988be317e);
+            
+    
+            var popup_84b15d500301439dbe1adc84b8dde71d = L.popup({maxWidth: '300'});
+
+            
+                var html_7c96b7526244456da92db5d2112b6fff = $('<div id="html_7c96b7526244456da92db5d2112b6fff" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.2  Location: Cayuga Territory</div>')[0];
+                popup_84b15d500301439dbe1adc84b8dde71d.setContent(html_7c96b7526244456da92db5d2112b6fff);
+            
+
+            marker_d8a65a0698a54c72b7b5a350f0e62fb5.bindPopup(popup_84b15d500301439dbe1adc84b8dde71d);
+
+            
+        
+    
+
+            var marker_3c9e64327d63462b98b6b18318369626 = L.marker(
+                [-30.559482,22.937506],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2978e49bc0954cc29a3a14b16263046e);
+            
+    
+
+                var icon_f156371ceb344fbaa7f3c503c527be98 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3c9e64327d63462b98b6b18318369626.setIcon(icon_f156371ceb344fbaa7f3c503c527be98);
+            
+    
+            var popup_2cda95f9c828443490adf8cdb77baf8f = L.popup({maxWidth: '300'});
+
+            
+                var html_0f4b059c068049ed9c9f95ac9cc7e3ef = $('<div id="html_0f4b059c068049ed9c9f95ac9cc7e3ef" style="width: 100.0%; height: 100.0%;">Sentiment :  -0.242  Location: South Africa</div>')[0];
+                popup_2cda95f9c828443490adf8cdb77baf8f.setContent(html_0f4b059c068049ed9c9f95ac9cc7e3ef);
+            
+
+            marker_3c9e64327d63462b98b6b18318369626.bindPopup(popup_2cda95f9c828443490adf8cdb77baf8f);
+
+            
+        
+    
+
+            var marker_4eeed0a7bfc64307a967d52d5a6c35c8 = L.marker(
+                [51.80978229999999,-0.2376744],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_2978e49bc0954cc29a3a14b16263046e);
+            
+    
+
+                var icon_35cc68142bbf4dfe97e54348013d3d4e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4eeed0a7bfc64307a967d52d5a6c35c8.setIcon(icon_35cc68142bbf4dfe97e54348013d3d4e);
+            
+    
+            var popup_d9273ca6d98043b996ddb3628964a056 = L.popup({maxWidth: '300'});
+
+            
+                var html_18ff49c223044b6fbf5b801ae893cebf = $('<div id="html_18ff49c223044b6fbf5b801ae893cebf" style="width: 100.0%; height: 100.0%;">Sentiment :  0.0  Location : Hertfordshire</div>')[0];
+                popup_d9273ca6d98043b996ddb3628964a056.setContent(html_18ff49c223044b6fbf5b801ae893cebf);
+            
+
+            marker_4eeed0a7bfc64307a967d52d5a6c35c8.bindPopup(popup_d9273ca6d98043b996ddb3628964a056);
+
+            
+        
+</script>
